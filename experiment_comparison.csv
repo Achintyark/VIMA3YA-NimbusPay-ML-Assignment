@@ -1,0 +1,7 @@
+Experiment,Configuration,Exact Match,Field Accuracy,Training Minutes,Peak GPU GB
+Base model baseline,Qwen2.5-1.5B,0.0,0.0,,
+Schema rules baseline,Qwen2.5-1.5B + rules prompt,0.0,0.0,,
+Raw QLoRA,"Rank 16, 4-bit",71.5,95.1,33.61,11.25
+Cleaned QLoRA,"Rank 16, 4-bit",80.5,96.7,33.6,10.38
+Cleaned FP16 LoRA,"Rank 16, FP16",86.0,97.7,25.66,11.08
+Rank-8 FP16 LoRA,"Rank 8, FP16",73.5,95.5,50.22,8.91
